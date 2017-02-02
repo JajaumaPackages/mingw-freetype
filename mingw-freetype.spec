@@ -6,7 +6,7 @@
 
 Name:           mingw-freetype
 Version:        2.7
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Free and portable font rendering engine
 
 License:        FTL or GPLv2+
@@ -127,6 +127,9 @@ rm -rf $RPM_BUILD_ROOT%{mingw32_mandir} $RPM_BUILD_ROOT%{mingw64_mandir}
 
 
 %changelog
+* Thu Feb 02 2017 Jajauma's Packages <jajauma@yandex.ru> - 2.7-2
+- Rebuild with GCC 5.4.0
+
 * Sun Oct 16 2016 Kalev Lember <klember@redhat.com> - 2.7-1
 - Update to 2.7
 - Sync patches with the native package
